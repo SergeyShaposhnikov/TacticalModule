@@ -1,0 +1,6 @@
+TacticalModule/Library/
+TacticalModule/Temp/
+*.csproj
+*.sln
+TacticalModule/.vs/TacticalModule/v15/.suo
+TacticalModule/.vs/

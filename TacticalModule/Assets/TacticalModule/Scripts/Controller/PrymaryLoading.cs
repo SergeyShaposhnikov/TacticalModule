@@ -10,6 +10,7 @@ namespace TacticalModule.Scripts.Controller
         {
             var provider = new GameProvider();
             ControllerTools.CreateMonoBehaviourController("IntetfaceController", true);
+            Destroy(gameObject);
         }
     }
 }

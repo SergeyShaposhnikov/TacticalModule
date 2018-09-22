@@ -24,6 +24,7 @@ namespace TacticalModule.Scripts.Provider
                 throw new Exception(string.Format("Manager {0} allready registred", managerKey));
             }
             managers.Add(managerKey, newManager);
+            UnityEngine.Debug.LogFormat("Registred manager {0}", newManager.GetType());
         }
 
         public void Unregister(IController destroyManager)

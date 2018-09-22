@@ -8,7 +8,7 @@ namespace TacticalModule.Scripts.Controller
     {
         private void Awake()
         {
-            var provider = new GameProvider();
+            var provider = new GameSingletoneProvider();
             ControllerTools.CreateMonoBehaviourController("IntetfaceController", true);
             Destroy(gameObject);
         }

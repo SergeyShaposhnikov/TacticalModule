@@ -4,13 +4,13 @@ using TacticalModule.Scripts.Managers;
 
 namespace TacticalModule.Scripts.Provider
 {
-    public class GameProvider : IProvider
+    public class GameSingletoneProvider : IProvider
     {
-        public static GameProvider Instance { get; private set; }
+        public static GameSingletoneProvider Instance { get; private set; }
 
         private readonly Dictionary<string, IController> _managers = new Dictionary<string, IController>();
 
-        public GameProvider()
+        public GameSingletoneProvider()
         {
             Instance = this;
         }

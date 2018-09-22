@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TacticalModule.Scripts.Controller
 {
-    [ProviderRegistrer(typeof(GameProvider))]
+    [ProviderRegistrer(typeof(GameSingletoneProvider))]
     public class InterfaceController : MonoBehaviour, IController
     {
         [SerializeField]
